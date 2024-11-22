@@ -1,0 +1,422 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sid's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#progress">Learning Progress</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hom">
+        <h1>Siddhu G</h1>
+        <p>Hello, I’m Siddharam. I am passionate about coding and constantly learning new technologies, specializing in .NET and the MERN stack</p>
+      </section>
+
+      <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Siddharam, currently learning MERN stack development at Masai School. With a Frontend in engineering and a keen interest in software development, I'm dedicated to building my skills in web technologies. I have experience working with .NET technologies, and I'm now focused on expanding my expertise to become a versatile full-stack developer.</p>
+        <br />
+        <p>I enjoy solving problems through code and am always eager to learn new tools and techniques to improve my work. My goal is to create efficient, scalable, and user-friendly applications. This portfolio is part of my journey to showcase my growth, progressbar, and passion for continuous learning in tech.</p>
+      </section>
+
+      <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skill-list">
+          <span class="skill-item">HTML5</span>
+          <span class="skill-item">CSS</span>
+          <span class="skill-item">JavaScript</span>
+          <span class="skill-item">React</span>
+          <span class="skill-item">Node.js</span>
+          <span class="skill-item">MSSQL</span>
+          <span class="skill-item">MySQL</span>
+          <span class="skill-item">.Net</span>
+          <span class="skill-item">Git</span>
+          <span class="skill-item">AWS</span>
+        </div>
+      </section>
+
+      <section id="progress" class="container">
+        <h2>Learning Progress</h2>
+        <div class="progressbar-section">
+          <div class="progressbar-section-header">
+            <p>Progress</p>
+            <p class="time">Start From - October 21, 2024</p>
+          </div>
+          <div class="progressbar-section-line">
+            <div class="progressbar-status">
+              <div class="item-status">
+                <span class="status-number">05</span>
+                <span class="status-type">In Progress</span>
+              </div>
+              <div class="item-status">
+                <span class="status-number">04</span>
+                <span class="status-type">Upcoming</span>
+              </div>
+              <div class="item-status">
+                <span class="status-number">09</span>
+                <span class="status-type">Technology Stack</span>
+              </div>
+            </div>
+            <div class="view-actions">
+              <button class="view-btn list-view" title="List View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
+                  <line x1="8" y1="6" x2="21" y2="6" />
+                  <line x1="8" y1="12" x2="21" y2="12" />
+                  <line x1="8" y1="18" x2="21" y2="18" />
+                  <line x1="3" y1="6" x2="3.01" y2="6" />
+                  <line x1="3" y1="12" x2="3.01" y2="12" />
+                  <line x1="3" y1="18" x2="3.01" y2="18" />
+                </svg>
+              </button>
+              <button class="view-btn grid-view active" title="Grid View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-boxes jsGridView">
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #fee4cb">
+                <div class="project-box-header">
+                  <span>November 05, 2024</span>
+                  <div class="more-wrapper">
+                    <button class="project-btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">HTML</p>
+                  <p class="box-content-subheader">Frontend Skills</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span class="box-progress" style="width: 20%; background-color: #ff942e"></span>
+                  </div>
+                  <p class="box-progress-percentage">20%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="participants">
+                    <button class="add-participant" style="color: #ff942e"></button>
+                  </div>
+                  <div class="days-left" style="color: #ff942e">In Progress</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #e9e7fd">
+                <div class="project-box-header">
+                  <span>November 10, 2024</span>
+                  <div class="more-wrapper">
+                    <button class="project-btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">CSS</p>
+                  <p class="box-content-subheader">Frontend Skills</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span class="box-progress" style="width: 25%; background-color: #4f3ff0"></span>
+                  </div>
+                  <p class="box-progress-percentage">25%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="participants">
+                    <button class="add-participant" style="color: #4f3ff0"></button>
+                  </div>
+                  <div class="days-left" style="color: #4f3ff0">In Progress</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box">
+                <div class="project-box-header">
+                  <span>October 21, 2024</span>
+                  <div class="more-wrapper">
+                    <button class="project-btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">JavaScript</p>
+                  <p class="box-content-subheader">Frontend Skills</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span class="box-progress" style="width: 8%; background-color: #096c86"></span>
+                  </div>
+                  <p class="box-progress-percentage">8%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="participants">
+                    <button class="add-participant" style="color: #096c86"></button>
+                  </div>
+                  <div class="days-left" style="color: #096c86">In Progress</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #ffd3e2">
+                <div class="project-box-header">
+                  <span>Not Started</span>
+                  <div class="more-wrapper">
+                    <button class="project-btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">React</p>
+                  <p class="box-content-subheader">Advanced Frontend</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span class="box-progress" style="width: 0%; background-color: #df3670"></span>
+                  </div>
+                  <p class="box-progress-percentage">0%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="participants">
+                    <button class="add-participant" style="color: #df3670"></button>
+                  </div>
+                  <div class="days-left" style="color: #df3670">Upcoming</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box">
+                <div class="project-box-header">
+                  <span>Not Started</span>
+                  <div class="more-wrapper">
+                    <button class="project-btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">Redux</p>
+                  <p class="box-content-subheader">Advanced Frontend</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span class="box-progress" style="width: 0%; background-color: #096c86"></span>
+                  </div>
+                  <p class="box-progress-percentage">0%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="participants">
+                    <button class="add-participant" style="color: #096c86"></button>
+                  </div>
+                  <div class="days-left" style="color: #096c86">Upcoming</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #c8f7dc">
+                <div class="project-box-header">
+                  <span>Not Started</span>
+                  <div class="more-wrapper">
+                    <button class="project-btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">Node.js</p>
+                  <p class="box-content-subheader">Backend Development</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span class="box-progress" style="width: 0%; background-color: #34c471"></span>
+                  </div>
+                  <p class="box-progress-percentage">0%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="participants">
+                    <button class="add-participant" style="color: #34c471"></button>
+                  </div>
+                  <div class="days-left" style="color: #34c471">Upcoming</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #d5deff">
+                <div class="project-box-header">
+                  <span>Not Started</span>
+                  <div class="more-wrapper">
+                    <button class="project-btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">MongoDB</p>
+                  <p class="box-content-subheader">Database</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span class="box-progress" style="width: 0%; background-color: #4067f9"></span>
+                  </div>
+                  <p class="box-progress-percentage">0%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="participants">
+                    <button class="add-participant" style="color: #4067f9"></button>
+                  </div>
+                  <div class="days-left" style="color: #4067f9">Upcoming</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #eaf1ce">
+                <div class="project-box-header">
+                  <span>November 07, 2024</span>
+                  <div class="more-wrapper">
+                    <button class="project-btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">Arrays</p>
+                  <p class="box-content-subheader">Data Structures and Algorithms</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span class="box-progress" style="width: 30%; background-color: #4067f9"></span>
+                  </div>
+                  <p class="box-progress-percentage">30%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="participants">
+                    <button class="add-participant" style="color: #4067f9"></button>
+                  </div>
+                  <div class="days-left" style="color: #4067f9">In Progress</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #fee4cb">
+                <div class="project-box-header">
+                  <span>November 08, 2024</span>
+                  <div class="more-wrapper">
+                    <button class="project-btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">Devops</p>
+                  <p class="box-content-subheader">Deployment and Security</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span class="box-progress" style="width: 40%; background-color: #ff942e"></span>
+                  </div>
+                  <p class="box-progress-percentage">40%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="participants">
+                    <button class="add-participant" style="color: #ff942e"></button>
+                  </div>
+                  <div class="days-left" style="color: #ff942e">In Progress</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <div class="form-grp">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-grp">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-grp">
+            <label for="message">Message</label>
+            <textarea type="message" name="message" id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Sid Guru. All right reserved</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
